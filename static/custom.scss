@@ -1,0 +1,8 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Your variable overrides
+$body-bg: #ccffe0;
+$enable-rounded: true;
+
+@import "../node_modules/bootstrap/scss/bootstrap";

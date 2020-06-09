@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Veggie plan</title>
+  <link href="{{ url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet" media=screen>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/location">Pick your location</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class='pt-4 text-success'>Look at that, what a great choice! &#128079</h2>
+    <h2 class='pb-4 text-success'>{{veggie}} will grow well in {{city}}. Happy times.</h2>
+    <h5 class="pb-3">The overall growing difficulty of {{veggie}} is {{rel_diff}} out of 5. It will grow {{height}} inches high and needs to be {{distance}} inches apart from other veggies to feel happy.</h5>
+  </div>
+  <div class="p-4 mb-2 bg-light text-dark">
+    <div class="container">
+      <div class="row">
+        <div class="pb-4 col-sm-6">
+          <div class="card border-success mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Soil composition &#128169</h5>
+              <p class="card-text">Soil growing difficulty is <b>{{soil}}</b> out of 5.</p>
+              <p class="card-text">The best type of soil to grow in is <b>{{soil_composition}}</b>.</p>
+              <p class="card-text">{{veggie}} will feel good in soil of <b>{{soil_ph}}</b> PH.</p>
+              <p class="card-text">{{veggie}} likes <b>{{soil_drain}}</b> soil.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pb-4 col-sm-6">
+          <div class="card border-success mb-3">
+            <div class="card-body">
+              <h5 class="card-title">When should I sow and harvest? &#127803</h5>
+              <p class="card-text">The care difficulty of {{veggie}} is <b>{{care_diff}}</b> out of 5.</p>
+              <p class="card-text">The best time to sow your {{veggie}} seeds in {{city}} is {{sow}}.</p>
+              <p class="card-text">The best time to harvest your {{veggie}} in {{city}} is {{harvest}}.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pb-4 col-sm-6">
+          <div class="card border-success mb-3">
+            <div class="card-body">
+              <h5 class="card-title">How much sun does {{veggie}} need? &#127774</h5>
+              <p class="card-text">{{veggie}} prefers <b>{{sun}}</b>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pb-4 col-sm-6">
+          <div class="card border-success mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Pest and disease control &#128567</h5>
+              <p class="card-text">{{veggie}} is not good friends with {{pests}}.</p>
+              <p class="card-text">{{veggie}} suffers from diseases such as {{diseases}}.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
